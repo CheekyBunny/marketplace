@@ -2,11 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 2px solid #F5F5F5;
+  border-bottom:  2px solid #EBEBEB;
 }
 body{font-family: 'Roboto', sans-serif;
   color: #999999;
   font-size: 13px;
   line-height: 20px;
+  margin: 0;
 }
 .header-link{
   color: #999999;
@@ -15,4 +18,20 @@ body{font-family: 'Roboto', sans-serif;
 }
 .header-link_active{
   font-weight: bold;
+}
+.header-panel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.header-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
