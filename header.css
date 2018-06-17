@@ -1,0 +1,18 @@
+.header-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{font-family: 'Roboto', sans-serif;
+  color: #999999;
+  font-size: 13px;
+  line-height: 20px;
+}
+.header-link{
+  color: #999999;
+  text-decoration: none;
+  padding: 6px 20px;
+}
+.header-link_active{
+  font-weight: bold;
+}
