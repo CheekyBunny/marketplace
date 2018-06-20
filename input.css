@@ -1,6 +1,24 @@
 .input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     padding: 6px 15px;
     border: 2px solid #F5F5F5;
-    border-radius: 15px;
+    border-radius: 40px;
     color: #B2B2B2;
+    outline: none;
+    transition: all 500ms;
+    text-align: center;
+}
+.input:hover{
+    border-color: rgb(192,192,192);
+    transition: all 500ms;
+}
+.input-search{
+    padding: 13px 23px;
+    width: 270px;
+    }
+.input-search::before{
+    width: 15px;
+    color: black;
+    content:"\f002" ;
 }
