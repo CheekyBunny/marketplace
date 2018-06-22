@@ -42,3 +42,28 @@ background-color: white;
   justify-content: center;
   height: 100%;
   position: relative;}
+.header-search{
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.header-search-prepend{
+display: flex;
+}
+.header-search-prepend button{
+  display: inline block;
+  background-color: white;
+  color: #D8D8D8;
+  border: 2px solid #F5F5F5;
+  border-radius: 40px;
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 0%;
+  border-right: none;
+  padding: 11px 23px;
+  font-size: 16px;
+  transition: all 500ms;
+}
+.header-search:hover *{
+  border-color: rgb(192,192,192);
+  transition: all 500ms;
+}
