@@ -1,4 +1,4 @@
-.input{
+.input {
     font-family: 'Roboto', sans-serif;
     padding: 6px 15px;
     border: 2px solid #F5F5F5;
@@ -8,15 +8,17 @@
     text-align: center;
     text-rendering: optimizeLegibility;
 }
-.input-search{
+
+.input-search {
     padding: 13px 23px 13px 11px;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     border-left: none;
     text-align: left;
-    }
+}
+
 .input,
-.input::-webkit-input-placeholder{
+.input::-webkit-input-placeholder {
     line-height: 14px;
     font-size: 12px;
     font-weight: bold;
