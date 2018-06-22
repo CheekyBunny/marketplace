@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/StacieRFox/marketplace/issues"
   },
-  "homepage": "https://github.com/StacieRFox/marketplace#readme"
+  "homepage": "https://github.com/StacieRFox/marketplace#readme",
+  "devDependencies": {
+    "webpack": "^4.12.0"
+  }
 }
