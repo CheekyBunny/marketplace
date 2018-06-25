@@ -7,6 +7,9 @@
        height: 330px;
     }
     .content-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         a{
             color: #808080;
         }

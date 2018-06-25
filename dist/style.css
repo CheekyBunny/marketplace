@@ -178,6 +178,10 @@ body {
   margin-right: auto; }
   .content .content-promo {
     height: 330px; }
-  .content .content-head a {
-    color: #808080; }
+  .content .content-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .content .content-head a {
+      color: #808080; }
 
