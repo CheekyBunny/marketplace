@@ -1,2 +1,2 @@
-import './scss/header.scss';
-import './scss/input.scss';
+import './scss/style.scss';
+import './js/slideshow.js';
