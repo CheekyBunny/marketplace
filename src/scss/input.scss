@@ -27,35 +27,38 @@ select {
     font-weight: bold;
     color: #B2B2B2;
 }
+
 .input-group {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
-    $border-radius:40px;
+    $border-radius: 40px;
     $border: 2px solid #F5F5F5;
     .input-group-left,
-    .input-group-right{
+    .input-group-right {
         border: $border;
         border-radius: $border-radius;
     }
-    .input-group-left{
+    .input-group-left {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         padding: 11px 23px;
-        font-size: 16px; 
-
-    &:first-child{
-        border-right: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        &:first-child {
+            border-right: none;
+        }
     }
-    }
-    .input-group-right{
+    .input-group-right {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         padding: 5px;
-        .btn{
-            height: 100%;;
+        .btn {
+            height: 100%;
+            ;
         }
-        &:last-child{
+        &:last-child {
             border-left: none;
         }
     }
@@ -63,31 +66,32 @@ select {
         padding: 15px 23px 15px 11px;
         text-align: left;
         width: 100px;
-
-        &:not(:first-child){
+        &:not(:first-child) {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             border-left: none;
         }
-
         /* новое */
-        &:not(:last-child){
+        &:not(:last-child) {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             border-right: none;
         }
     }
-    .input-group-left{
+    .input-group-left {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         padding: 11px 23px;
         /* ставим тут границу */
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
-.btn-subscribe{
-    border:none !important;
-    color: rgb(153,153,153) !important;
-    background: -webkit-linear-gradient(bottom right, #f69884, #fac887) !important; /* Для хрома */
-    background: linear-gradient(bottom right, #f69884, #fac887) !important; /* Для новых */
+
+.btn-subscribe {
+    border: none !important;
+    color: rgb(153, 153, 153) !important;
+    background: -webkit-linear-gradient(bottom right, #f69884, #fac887) !important;
+    /* Для хрома */
+    background: linear-gradient(bottom right, #f69884, #fac887) !important;
+    /* Для новых */
 }
