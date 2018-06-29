@@ -319,7 +319,8 @@ select {
 .col {
   display: flex;
   flex-basis: 0;
-  flex-grow: 1; }
+  flex-grow: 1;
+  flex-direction: column; }
 
 .content-section {
   padding: 20px 0px; }
@@ -331,7 +332,6 @@ select {
 
 .card {
   width: 240px;
-  height: 330px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
   margin: 15px; }
   .card .card-head {
@@ -353,20 +353,18 @@ select {
       display: flex;
       align-items: stretch;
       justify-content: stretch;
-      height: 120px;
-      width: 235px;
       margin: 17px; }
     .card .card-body .card-title {
       font-size: 14px;
       line-height: 25px;
-      color: #808080; }
+      color: #808080;
+      font-weight: 400; }
   .card .card-footer {
     border-top: 2px solid #f5f5f5;
     font-size: 16px;
     line-height: 30px;
     font-style: bold;
     text-align: center;
-    margin: 12px 4.3px;
     padding: 17px;
     font-weight: bold; }
 
@@ -375,4 +373,36 @@ select {
   justify-content: center;
   align-items: center;
   margin-top: 1em; }
+
+.recent-cards .card-img {
+  margin: 15px 0 !important; }
+
+.recent-cards .col {
+  margin: 15px 0;
+  justify-content: space-between; }
+
+.recent-cards .row {
+  align-items: stretch; }
+
+.recent-cards .card-name {
+  font-size: 14px;
+  line-height: 25px;
+  color: #808080;
+  font-weight: 400; }
+
+.recent-cards .card-price {
+  color: #B2B2B2;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bold; }
+
+.title-name {
+  font-size: 18px;
+  color: #808080;
+  line-height: 30px; }
+  .title-name .fa-eye {
+    color: #D8D8D8; }
+
+.title-name > span {
+  margin: 11px; }
 
