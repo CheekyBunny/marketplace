@@ -14,10 +14,14 @@ body {
     margin: 0;
 }
 
+a,
 .header-link {
     color: #999999;
     text-decoration: none;
     padding: 19px 20px;
+    &:hover{
+        font-weight: bold;
+    }
 }
 
 .header-link_active {
