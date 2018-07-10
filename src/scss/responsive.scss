@@ -37,18 +37,33 @@
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
-        margin: 0;
         .card{
             width:45%;
-            margin: 5px;
+            margin: 10px;
         }
     }
     .footer-links .row{
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
-    }
-}
+        margin: 15px; 
+        .title-name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }  
+        .shop {
+            margin: 20px;
+            }
+        }
+        
+
+        .stat{
+            display: flex;
+            align-items: center;
+            }
+    }     
+
 @media(min-width:768px){
     .lg-invisible{
         display: none;
