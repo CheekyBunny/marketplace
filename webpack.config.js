@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -19,10 +20,10 @@ module.exports = {
                 ],
             },
             {
-                test: /\.pug$/, // Рассматриваем все pug файлы
-                loader: 'pug-loader',  //используем pug-loader, установленный на шаге 2
+                test: /\.pug$/,
+                loader: 'pug-loader',
                 options: {
-                    pretty: true //файл красиво отформатирован будет
+                    pretty: true
                 }
             }
         ]
@@ -31,8 +32,14 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "style.css",
         }),
-        new HtmlWebpackPlugin({  
-            template: './src/index.pug', // исходный код будет получен путем обработки pug-файла
-        }) 
+        new HtmlWebpackPlugin({
+            template: './src/index.pug',
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: './src/img',
+                to: './img'
+            },
+        ])
     ]
 };
