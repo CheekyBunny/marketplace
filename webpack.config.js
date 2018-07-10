@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -16,12 +17,22 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ],
+            },
+            {
+                test: /\.pug$/, // Рассматриваем все pug файлы
+                loader: 'pug-loader',  //используем pug-loader, установленный на шаге 2
+                options: {
+                    pretty: true //файл красиво отформатирован будет
+                }
             }
         ]
     },
     plugins: [
         new MiniCssExtractPlugin({
             filename: "style.css",
-        })
+        }),
+        new HtmlWebpackPlugin({  
+            template: './src/index.pug', // исходный код будет получен путем обработки pug-файла
+        }) 
     ]
 };

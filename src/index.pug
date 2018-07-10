@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Document
+    link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+  body
+    .header
+      .header-panel
+        .header-search
+          .header-search-prepend
+            button.btn.btn-outline-secondary(type="button")
+              i.fas.fa-search
+          input.input.input-search(type="text" placeholder="Search goods...")
+        .header-logo
+          svg.progress-ring(width="40" height="40")
+            circle.progress-ring__circle(stroke="#0078FF" stroke-width="9" fill="transparent" r="15" cx="20" cy="20")
+        .header-links
+          a.header-link(href="")
+            i.fas.fa-heart
+            |  Favorite
+          a.header-link(href="")
+            i.fas.fa-list-ul
+            |  Compare
+          a.header-link(href="")
+            i.fas.fa-shopping-cart
+            |  Cart
+          img.header-avatar(src="img/111.jpg")
+      nav.header-menu
+        a.header-link(href="") Electronic
+        a.header-link.header-link_active(href="") Appliances
+        a.header-link(href="") Children's goods
+        a.header-link(href="") Repairs
+        a.header-link(href="") Clothes
+        a.header-link(href="") Footwear
+        a.header-link(href="") Beauty
