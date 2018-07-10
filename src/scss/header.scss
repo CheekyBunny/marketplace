@@ -6,6 +6,7 @@
     border-bottom: 2px solid #EBEBEB;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #999999;
@@ -83,4 +84,12 @@ a,
 .header-search:hover * {
     border-color: rgb(192, 192, 192);
     transition: all 500ms;
+}
+$logo-color:#0078FF; 
+
+.logo{
+    width:40px;
+    height: 40px;
+    border: 8px solid $logo-color; 
+    border-radius: 50%; 
 }

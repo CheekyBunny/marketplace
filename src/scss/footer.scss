@@ -1,5 +1,4 @@
 .footer{
-    background-color: #F7F7F7;
     border-top:  2px solid #EBEBEB;
 
     .footer-links{
@@ -33,7 +32,15 @@
             color: #D8D8D8;
         }
     }
+
+    &.footer-white{
+        background-color: #FFFFFF;
+    }
+    &.footer-aux{
+        background-color: #F7F7F7;
+    }
 }
+
 .footer-additional{
 display: flex;
 align-items: center;

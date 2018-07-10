@@ -1,12 +1,12 @@
 block content
 
-  .content-section
+  .content-sectio.sm-invisible
     .content-promo.container
       .row
         .slideshow-container
           .slide.fade
             img(src="img/slider/Image.png" style="width:100%")
-            span.badge.badge-magenta Badge
+            span.badge-magenta Badge
             .text The Best Place to Play
             .text2 Space The Final Frontier
           .slide.fade
@@ -26,7 +26,7 @@ block content
         button.btn.btn-default Popular
         button.btn.btn-default.active Trending
         button.btn.btn-default New
-      .selectors
+      .filters
         select(name="categories")
           option(disabled="" selected="" value="")
             | Categories
@@ -97,13 +97,13 @@ block content
 .content-section.content-section-bordered
   .row
     .content-subscribe.container
-      a(href="")
+      a.sm-invisible(href="")
         i.far.fa-envelope-open
         |  Learn about profitable offers and get personal recommendations
       .input-group
         .input-group-left
           i.far.fa-envelope
-        input.input(type="text" placeholder="Search")
+        input.input(type="text" placeholder="Subscribe")
         .input-group-right
           button.btn.btn-subscribe(type="button") Subscribe
 .content-section
