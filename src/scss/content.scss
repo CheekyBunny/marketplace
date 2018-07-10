@@ -1,0 +1,180 @@
+.content {
+    .content-promo {
+        height: 330px;
+    }
+    .content-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            color: #808080;
+        }
+    }
+}
+
+.btn {
+    border: 2px solid #F5F5F5;
+    border-radius: 32px;
+    border: 2px solid #F5F5F5;
+    border-radius: 32px;
+    padding: 13px 22px;
+    /* outline отвечает за рамку при выделении синюю такую */
+    outline: none;
+}
+
+.btn-default {
+    background-color: white;
+    color: #B2B2B2;
+    &:hover {
+        background-color: rgb(244, 244, 244);
+        border-color: rgb(192, 192, 192);
+    }
+    &:active,
+    /* поддержка через псевдокласс */
+    &.active {
+        /* через класс обычный */
+        background-color: #EBEBEB;
+        border-color: rgb(192, 192, 192);
+    }
+}
+
+.btn-group {
+    display: inline-flex;
+    .btn {
+        &+.btn {
+            margin-left: -1px;
+        }
+        &:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+.container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: stretch;
+}
+
+.row {
+    display: flex;
+    color: #808080;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.content-section {
+    &-bordered {
+        border-bottom: 2px solid #EBEBEB
+    }
+    padding: 20px 0px;
+}
+
+.content-cards>.row {
+    justify-content: space-around;
+}
+
+.card {
+    width: 240px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    margin: 15px;
+    .card-head {
+        color: #808080;
+        padding: 13px 20px;
+        border-bottom: 2px solid #f5f5f5;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .card-body {
+        height: auto;
+        display: flex;
+        font-size: 14px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 20px;
+        .card-img {
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+            margin: 17px;
+        }
+        .card-title {
+            font-size: 14px;
+            line-height: 25px;
+            color: #808080;
+            font-weight: 400;
+        }
+    }
+    .card-footer {
+        border-top: 2px solid #f5f5f5;
+        font-size: 16px;
+        line-height: 30px;
+        font-style: bold;
+        text-align: center;
+        padding: 17px;
+        font-weight: bold;
+    }
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.recent-cards {
+    .card-img {
+        margin: 15px 0 !important;
+    }
+    .col {
+        margin: 15px 0;
+        justify-content: space-between;
+    }
+    .row {
+        align-items: stretch;
+    }
+    .card-name {
+        font-size: 14px;
+        line-height: 25px;
+        color: #808080;
+        font-weight: 400;
+    }
+    .card-price {
+        color: #B2B2B2;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+}
+
+.title-name {
+    font-size: 18px;
+    color: #808080;
+    line-height: 30px;
+    .fa-eye {
+        color: #D8D8D8;
+    }
+}
+
+.title-name>span {
+    margin: 11px;
+}
