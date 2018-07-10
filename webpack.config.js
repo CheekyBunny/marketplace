@@ -33,7 +33,7 @@ module.exports = {
             filename: "style.css",
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.pug',
+            template: './src/pug/index.pug',
         }),
         new CopyWebpackPlugin([
             {
