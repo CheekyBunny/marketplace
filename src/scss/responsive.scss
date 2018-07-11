@@ -40,6 +40,9 @@
         .card{
             width:45%;
             margin: 10px;
+            .card-img{
+                max-width: 50%;
+            }
         }
     }
     .footer-links .row{
