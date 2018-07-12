@@ -13,9 +13,21 @@
     }
 
     .sm-invisible{
-        display: none;
+        display: none !important;
     }
 
+.header-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
     .content-head{
         &>.row{
@@ -68,7 +80,12 @@
     }     
 
 @media(min-width:768px){
+    .md-invisible{
+        display: none !important;
+    }
+}
+@media(min-width:1024px){
     .lg-invisible{
-        display: none;
+        display: none !important;
     }
 }

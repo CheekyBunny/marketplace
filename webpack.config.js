@@ -40,6 +40,10 @@ module.exports = {
                 from: './src/img',
                 to: './img'
             },
+            {
+                from: './src/js/hamburger.js',
+                to: './hamburger.js' 
+            },
         ])
     ]
 };

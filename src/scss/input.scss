@@ -14,8 +14,8 @@ select {
 
 .input-search {
     padding: 13px 23px 13px 11px;
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-left: none;
     text-align: left;
 }
@@ -89,7 +89,7 @@ select {
 
 .btn-subscribe {
     border: none !important;
-    color: rgb(153, 153, 153) !important;
+    color: #999999 !important;
     background: -webkit-linear-gradient(bottom right, #f69884, #fac887) !important;
     /* Для хрома */
     background: linear-gradient(bottom right, #f69884, #fac887) !important;

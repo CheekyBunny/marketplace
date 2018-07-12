@@ -1,77 +1,75 @@
-.footer{
-    border-top:  2px solid #EBEBEB;
-
-    .footer-links{
-        margin:30px 0;
-
-        li{
+.footer {
+    border-top: 2px solid #EBEBEB;
+    .footer-links {
+        margin: 30px 0;
+        li {
             list-style: none;
             padding: 6px 15px;
         }
-
-        ul{
+        ul {
             max-height: 100px;
             display: flex;
             flex-direction: column;
             align-items: stretch;
             flex-wrap: wrap;
-            margin:0;
+            margin: 0;
             padding-left: 0.5rem;
         }
     }
-
-    .row{
+    .row {
         align-items: flex-start
     }
-
     .title-name {
         font-weight: bold;
         font-size: 14px;
         margin-bottom: 10px;
-        .fa,.far,.fab,.fas {
+        .fa,
+        .far,
+        .fab,
+        .fas {
             color: #D8D8D8;
         }
     }
-
-    &.footer-white{
+    &.footer-white {
         background-color: #FFFFFF;
     }
-    &.footer-aux{
+    &.footer-aux {
         background-color: #F7F7F7;
     }
 }
 
-.footer-additional{
-display: flex;
-align-items: center;
-justify-content: center;
-border-top:  2px solid #EBEBEB;
+.footer-additional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #EBEBEB;
 }
-.footer-additional>a{
+
+.footer-additional>a {
     padding: 35px 20px;
 }
 
-.column-title{
+.column-title {
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 10px;
 }
-.statistic{
-    font-size: 12px;
 
-    &>span{
+.statistic {
+    font-size: 12px;
+    &>span {
         color: #808080;
         font-size: 16px;
         line-height: 30px;
         font-weight: bold;
         margin: 0 10px;
     }
-    &:first-child>span{
+    &:first-child>span {
         font-size: 18px !important;
     }
 }
 
-.footer-column{
+.footer-column {
     display: flex;
     flex-direction: column;
-    }
+}
