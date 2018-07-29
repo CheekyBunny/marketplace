@@ -41,8 +41,12 @@ module.exports = {
                 to: './img'
             },
             {
-                from: './src/js/hamburger.js',
-                to: './hamburger.js' 
+                from: './src/js',
+                to: './js' 
+            },
+            {
+                from: './src/slick',
+                to: './slick'
             },
         ])
     ]
