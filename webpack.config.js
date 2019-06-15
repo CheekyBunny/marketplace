@@ -33,12 +33,16 @@ module.exports = {
             filename: "style.css",
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.pug',
+            template: './src/pug/index.pug',
         }),
         new CopyWebpackPlugin([
             {
                 from: './src/img',
                 to: './img'
+            },
+            {
+                from: './src/js/hamburger.js',
+                to: './hamburger.js' 
             },
         ])
     ]

@@ -1,0 +1,462 @@
+@charset "UTF-8";
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #EBEBEB; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0; }
+
+a,
+.header-link {
+  color: #999999;
+  text-decoration: none;
+  padding: 19px 20px; }
+  a:hover,
+  .header-link:hover {
+    font-weight: bold; }
+
+.header-link_active {
+  font-weight: bold; }
+
+.header-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em; }
+
+.header-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.header-logo {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative; }
+
+.header-search {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap; }
+
+.header-search-prepend {
+  display: flex; }
+
+.header-search-prepend button {
+  display: inline block;
+  background-color: white;
+  color: #D8D8D8;
+  border: 2px solid #F5F5F5;
+  border-radius: 40px;
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 0%;
+  border-right: none;
+  padding: 11px 23px;
+  font-size: 16px;
+  transition: all 500ms; }
+
+.header-search:hover * {
+  border-color: silver;
+  transition: all 500ms; }
+
+.input,
+input,
+select {
+  font-family: 'Roboto', sans-serif;
+  padding: 13px 22px;
+  border: 2px solid #F5F5F5;
+  border-radius: 40px;
+  outline: none;
+  transition: all 500ms;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  color: #B2B2B2; }
+
+.input-search {
+  padding: 13px 23px 13px 11px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-left: none;
+  text-align: left; }
+
+.input,
+.input::-webkit-input-placeholder {
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #B2B2B2; }
+
+.input-group {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  .input-group .input-group-left,
+  .input-group .input-group-right {
+    border: 2px solid #F5F5F5;
+    border-radius: 40px; }
+  .input-group .input-group-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 11px 23px;
+    font-size: 16px;
+    display: flex;
+    align-items: center; }
+    .input-group .input-group-left:first-child {
+      border-right: none; }
+  .input-group .input-group-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 5px; }
+    .input-group .input-group-right .btn {
+      height: 100%; }
+    .input-group .input-group-right:last-child {
+      border-left: none; }
+  .input-group .input {
+    padding: 15px 23px 15px 11px;
+    text-align: left;
+    width: 100px;
+    /* новое */ }
+    .input-group .input:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: none; }
+    .input-group .input:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none; }
+  .input-group .input-group-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 11px 23px;
+    /* ставим тут границу */
+    font-size: 16px; }
+
+.btn-subscribe {
+  border: none !important;
+  color: #999999 !important;
+  background: -webkit-linear-gradient(bottom right, #f69884, #fac887) !important;
+  /* Для хрома */
+  background: linear-gradient(bottom right, #f69884, #fac887) !important;
+  /* Для новых */ }
+
+* {
+  box-sizing: border-box; }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative; }
+
+/* Hide the images by default */
+.slide {
+  display: none; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Caption text */
+.text {
+  color: #FFFFFF;
+  font-size: 36px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center; }
+
+.text2 {
+  opacity: 0.6;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px; }
+
+.slide .badge {
+  max-width: 90px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  padding: 7.5px 15px;
+  position: absolute;
+  bottom: 70%;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px; }
+
+.badge-magenta {
+  color: white;
+  background-color: #FF004F; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.content .content-promo {
+  height: 330px; }
+
+.content .content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .content .content-head a {
+    color: #808080; }
+
+.btn {
+  border: 2px solid #F5F5F5;
+  border-radius: 32px;
+  border: 2px solid #F5F5F5;
+  border-radius: 32px;
+  padding: 13px 22px;
+  /* outline отвечает за рамку при выделении синюю такую */
+  outline: none; }
+
+.btn-default {
+  background-color: white;
+  color: #B2B2B2; }
+  .btn-default:hover {
+    background-color: #f4f4f4;
+    border-color: silver; }
+  .btn-default:active, .btn-default.active {
+    /* через класс обычный */
+    background-color: #EBEBEB;
+    border-color: silver; }
+
+.btn-group {
+  display: inline-flex; }
+  .btn-group .btn + .btn {
+    margin-left: -1px; }
+  .btn-group .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .btn-group .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: stretch; }
+
+.row {
+  display: flex;
+  color: #808080;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+
+.col {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column; }
+
+.content-section {
+  padding: 20px 0px; }
+  .content-section-bordered {
+    border-bottom: 2px solid #EBEBEB; }
+
+.content-cards > .row {
+  justify-content: space-around; }
+
+.card {
+  width: 240px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  margin: 15px; }
+  .card .card-head {
+    color: #808080;
+    padding: 13px 20px;
+    border-bottom: 2px solid #f5f5f5;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center; }
+  .card .card-body {
+    height: auto;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px; }
+    .card .card-body .card-img {
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      margin: 17px; }
+    .card .card-body .card-title {
+      font-size: 14px;
+      line-height: 25px;
+      color: #808080;
+      font-weight: 400; }
+  .card .card-footer {
+    border-top: 2px solid #f5f5f5;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: bold;
+    text-align: center;
+    padding: 17px;
+    font-weight: bold; }
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em; }
+
+.recent-cards .card-img {
+  margin: 15px 0 !important; }
+
+.recent-cards .col {
+  margin: 15px 0;
+  justify-content: space-between; }
+
+.recent-cards .row {
+  align-items: stretch; }
+
+.recent-cards .card-name {
+  font-size: 14px;
+  line-height: 25px;
+  color: #808080;
+  font-weight: 400; }
+
+.recent-cards .card-price {
+  color: #B2B2B2;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bold; }
+
+.title-name {
+  font-size: 18px;
+  color: #808080;
+  line-height: 30px; }
+  .title-name .fa-eye {
+    color: #D8D8D8; }
+
+.title-name > span {
+  margin: 11px; }
+
+.footer {
+  background-color: #F7F7F7;
+  border-top: 2px solid #EBEBEB; }
+  .footer .footer-links {
+    margin: 30px 0; }
+    .footer .footer-links li {
+      list-style: none;
+      padding: 6px 15px; }
+    .footer .footer-links ul {
+      max-height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin: 0;
+      padding-left: 0.5rem; }
+  .footer .row {
+    align-items: flex-start; }
+  .footer .title-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px; }
+    .footer .title-name .fa, .footer .title-name .far, .footer .title-name .fab, .footer .title-name .fas {
+      color: #D8D8D8; }
+
+.footer-additional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #EBEBEB; }
+
+.footer-additional > a {
+  padding: 35px 20px; }
+
+.column-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+.statistic {
+  font-size: 12px; }
+  .statistic > span {
+    color: #808080;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0 10px; }
+  .statistic:first-child > span {
+    font-size: 18px !important; }
+
+.footer-column {
+  display: flex;
+  flex-direction: column; }
+
